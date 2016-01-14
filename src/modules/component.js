@@ -67,7 +67,7 @@ var COMPONENT = {
         return (ref1 = attributePattern.exec(line)) != null ? ref1[1] : null;
     },
     isAttributeValue: function(scopes) {
-        return this.hasAttributeValueScope(scopes) && !this.hasAttributeContentScope(scopes);;
+        return this.hasTagScope(scopes) && this.hasAttributeValueScope(scopes) && !this.hasAttributeContentScope(scopes);
     },
     isAttribute: function(prefix, scopes) {
         if (!trailingWhitespace.test(prefix) && !attributeInput.test(prefix)) {
@@ -77,7 +77,7 @@ var COMPONENT = {
     },
     isTag: function(scopes, line) {
         let segment = line.split(' ').pop();
-        
+
         return tagInput.test(segment) && !tagNotInput.test(segment) && !this.hasScopeDescriptor(scopes, [
             'string.quoted.double.jsx',
             'string.quoted.single.jsx',
@@ -90,8 +90,14 @@ var COMPONENT = {
             'meta.scope.tag.block',
             'meta.tag.block.begin.jsx',
             'meta.tag.block.end.jsx',
-            'entity.name.tag.jsx'
-        ]) && !this.hasScopeDescriptor(scopes, ['invalid.illegal.tag.end.jsx']);
+            'entity.name.tag.jsx',
+            'tag.open.js',
+            'punctuation.definition.tag.begin.js',
+            'punctuation.definition.tag.end.js'
+        ]) && !this.hasScopeDescriptor(scopes, [
+            'invalid.illegal.tag.end.jsx',
+            'tag.closed.js'
+        ]);
     },
     hasAttributeScope: function(scopes) {
         return this.hasScopeDescriptor(scopes, [
@@ -108,13 +114,18 @@ var COMPONENT = {
         ]) && this.hasScopeDescriptor(scopes, [
             'meta.scope.inner',
             'punctuation.definition.string.begin.jsx',
-            'punctuation.definition.string.end.jsx'
+            'punctuation.definition.string.end.jsx',
+            'punctuation.definition.string.begin.js',
+            'punctuation.definition.string.end.js'
         ]);
     },
     hasAttributeContentScope: function(scopes) {
         return this.hasScopeDescriptor(scopes, [
             'punctuation.section.embedded.begin.jsx',
             'punctuation.section.embedded.end.jsx',
+            'punctuation.definition.brace.curly.begin.js',
+            'punctuation.definition.brace.curly.end.js',
+            'meta.brace.curly.js',
             'meta.embedded.expression.jsx',
             /meta.embedded.expression.(\S*).jsx/
         ]);
