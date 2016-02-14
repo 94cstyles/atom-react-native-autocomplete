@@ -1,0 +1,23 @@
+{
+    "geolocation": [{
+        "name": "getCurrentPosition",
+        "snippet": "getCurrentPosition(geo_success: Function, geo_error?: Function, geo_options?: GeoOptions)",
+        "type": "method",
+        "rightLabelHTML": "react-native"
+    }, {
+        "name": "watchPosition",
+        "snippet": "watchPosition(success: Function, error?: Function, options?: GeoOptions)",
+        "type": "method",
+        "rightLabelHTML": "react-native"
+    }, {
+        "name": "clearWatch",
+        "snippet": "clearWatch(watchID: number)",
+        "type": "method",
+        "rightLabelHTML": "react-native"
+    }, {
+        "name": "stopObserving",
+        "snippet": "stopObserving()",
+        "type": "method",
+        "rightLabelHTML": "react-native"
+    }]
+}

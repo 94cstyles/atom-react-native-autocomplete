@@ -14,15 +14,20 @@ const provider = {
                 [bufferPosition.row, 0], bufferPosition
             ]);
 
-        if (COMPONENT.isAttributeValue(scopes)) {
-            return COMPONENT.getAttributeValueCompletions(line);
-        } else if (COMPONENT.isTag(scopes, line)) {
-            return COMPONENT.getTagNameCompletions();
-        } else if (COMPONENT.isAttribute(prefix, scopes)) {
-            return COMPONENT.getAttributeNameCompletions(editor, bufferPosition);
-        } else {
-            return API.getCompletions(line);
-        }
+        return new Promise(function(resolve) {
+            var suggestion = null;
+
+            if (COMPONENT.isAttributeValue(scopes)) {
+                suggestion = COMPONENT.getAttributeValueCompletions(line);
+            } else if (COMPONENT.isTag(scopes, line)) {
+                suggestion = COMPONENT.getTagNameCompletions();
+            } else if (COMPONENT.isAttribute(prefix, scopes)) {
+                suggestion = COMPONENT.getAttributeNameCompletions(editor, bufferPosition);
+            } else {
+                suggestion = API.getCompletions(line);
+            }
+            resolve(suggestion);
+        });
     },
     onDidInsertSuggestion: function(request) {
         if (request.suggestion.rightLabelHTML === 'react-native' && request.suggestion.type === 'attribute') {

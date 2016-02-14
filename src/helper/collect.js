@@ -14,7 +14,18 @@ const separateTags = ['ActivityIndicatorIOS', 'DatePickerIOS', 'Image', 'ListVie
  */
 var collect = {
     API: {
-        "React": []
+        "React": [{
+            "text": "Platform",
+            "type": "property",
+            "rightLabelHTML": "react-native"
+        }],
+        "Platform": [{
+            "text": "OS",
+            "type": "property"
+        }, {
+            "text": "Version",
+            "type": "property"
+        }]
     },
     COMPONENT: {
         "tags": {
@@ -25,9 +36,13 @@ var collect = {
         "values": {},
         "extend": {}
     },
+    CLASS: {
+
+    },
     cache: {
         API: {},
-        COMPONENT: {}
+        COMPONENT: {},
+        CLASS:{}
     },
     indent: 2,
     alphabetical(arr) {
@@ -157,7 +172,7 @@ var collect = {
             });
         }
     },
-    parseMethod: function(node, url) {
+    parseMethod: function(node, url, key) {
         var name = node.find('> .propTitle').html().match(/<span class="propType">static <\/span>([\s\S]*)<span class="propType">/);
 
         if (name) {
@@ -189,14 +204,14 @@ var collect = {
             "descriptionMoreURL": this.getDescriptionMoreURL(url, name)
         }
     },
-    parsePropertie: function(node, url) {
+    parsePropertie: function(node, url, key) {
         var name = node.find('> .propTitle').html().match(/<a class="anchor" name="([\s\S]*)"><\/a>([\s\S]*)<span class="propType">/);
         if (name) {
             name = name[2].trim();
             return {
                 "name": name,
-                "text": name,
-                "type": "property",
+                "text": key === 'Animated' && !!name.match(/^(Value|ValueXY)$/) ? name + '()' : name,
+                "type": key === 'Animated' && !!name.match(/^(Value|ValueXY)$/) ? "class" : "property",
                 "description": this.getDescription(node),
                 "descriptionMoreURL": this.getDescriptionMoreURL(url, name)
             }
@@ -205,7 +220,7 @@ var collect = {
             return null;
         }
     },
-    parseProp: function(node, url) {
+    parseProp: function(node, url, key) {
         if (node.parent().attr('class') !== 'props') return null;
         var extendKey = node.find('> .propTitle').html().match(/<a href="([\s\S]*).html#props">([\s\S]*)<\/a>/);
         if (extendKey === null) {
@@ -281,11 +296,11 @@ var collect = {
                 for (let j = 0; j < props.length; j++) {
                     let obj = null;
                     if (title === 'methods') {
-                        obj = this.parseMethod(props.eq(j), url);
+                        obj = this.parseMethod(props.eq(j), url, name);
                     } else if (title === 'properties') {
-                        obj = this.parsePropertie(props.eq(j), url);
+                        obj = this.parsePropertie(props.eq(j), url, name);
                     } else if (title === 'props') {
-                        obj = this.parseProp(props.eq(j), url);
+                        obj = this.parseProp(props.eq(j), url, name);
                     }
                     if (typeof(obj) === 'string') {
                         completion.extend.push(obj)
@@ -328,7 +343,7 @@ var collect = {
             if (error) return console.log(error + '\n' + url + '\n');
             let $ = cheerio.load(body);
             this.outputFile(type, this.getClass(type, name, url, $));
-            this.outputFile(type, this.getSubClass(type, name, url, $));
+            // this.outputFile(type, this.getSubClass(type, name, url, $));
         });
     },
     find: function() {
@@ -342,7 +357,7 @@ var collect = {
                 if (title.match(/apis|components/gi)) {
                     let subMenuNode = menuNode.eq(i).find('ul a');
                     for (let j = 0; j < subMenuNode.length; j++) {
-                        this.reloadPage(title, subMenuNode.eq(j).html(), 'http://facebook.github.io' + subMenuNode.eq(j).attr('href'));
+                        this.reloadPage(title, subMenuNode.eq(j).html(), 'http://facebook.github.io/react-native/' + subMenuNode.eq(j).attr('href'));
                     }
                 }
             }
