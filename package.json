@@ -1,7 +1,7 @@
 {
     "name": "atom-react-native-autocomplete",
     "main": "./lib/autocomplete",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "React-Native(v0.22) autocompletion for Atom text editor! ",
     "keywords": [
         "react-native",

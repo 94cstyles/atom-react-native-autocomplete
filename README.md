@@ -13,5 +13,11 @@ Or search for `atom-react-native-autocomplete` in Atom settings view.  <br />
 
 Potentially wait for further installs  (just `apm install language-javascript-jsx` if its not there already).  <br />
 
+## Options
+- #### prefix
+    AutoComplete feature the string parsing rules
 
+    *Default:* `React`
+
+<br />
 ![demo](http://7oxfk1.com1.z0.glb.clouddn.com/atom-react-native-autocomplete-demo.gif)

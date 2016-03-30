@@ -37,6 +37,9 @@ const provider = {
                 });
             }, 1);
         }
+    },
+    setPrefix: function(prefix) {
+        API.setMatchRule(prefix);
     }
 };
 
