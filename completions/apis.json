@@ -161,170 +161,6 @@
       "type": "property"
     }
   ],
-  "Clipboard": [
-    {
-      "name": "getString",
-      "snippet": "getString()",
-      "type": "method",
-      "description": "Get content of string type, this method returns a Promise, so you can use follow",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/clipboard.html#getstring"
-    },
-    {
-      "name": "setString",
-      "snippet": "setString(${1:content})",
-      "type": "method",
-      "description": "Set content of string type. You can use following code to set clipboard content",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/clipboard.html#setstring"
-    }
-  ],
-  "LinkingIOS": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Add a handler to LinkingIOS changes by listening to the url event typeand provid",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#addeventlistener"
-    },
-    {
-      "name": "canOpenURL",
-      "snippet": "canOpenURL(${1:url}, ${2:callback})",
-      "type": "method",
-      "description": "Determine whether or not an installed app can handle a given URL.The callback fu",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#canopenurl"
-    },
-    {
-      "name": "openURL",
-      "snippet": "openURL(${1:url})",
-      "type": "method",
-      "description": "Try to open the given url with any of the installed apps.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#openurl"
-    },
-    {
-      "name": "popInitialURL",
-      "snippet": "popInitialURL()",
-      "type": "method",
-      "description": "If the app launch was triggered by an app link, it will pop the link url,otherwi",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#popinitialurl"
-    },
-    {
-      "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Remove a handler by passing the url event type and the handler",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#removeeventlistener"
-    }
-  ],
-  "InteractionManager": [
-    {
-      "name": "addListener",
-      "text": "addListener",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#addlistener"
-    },
-    {
-      "name": "clearInteractionHandle",
-      "snippet": "clearInteractionHandle(${1:handle})",
-      "type": "method",
-      "description": "Notify manager that an interaction has completed.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#clearinteractionhandle"
-    },
-    {
-      "name": "createInteractionHandle",
-      "snippet": "createInteractionHandle()",
-      "type": "method",
-      "description": "Notify manager that an interaction has started.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#createinteractionhandle"
-    },
-    {
-      "name": "Events",
-      "text": "Events",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#events"
-    },
-    {
-      "name": "runAfterInteractions",
-      "snippet": "runAfterInteractions(${1:task})",
-      "type": "method",
-      "description": "Schedule a function to run after all interactions have completed.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#runafterinteractions"
-    },
-    {
-      "name": "setDeadline",
-      "snippet": "setDeadline(${1:deadline})",
-      "type": "method",
-      "description": "A positive number will use setTimeout to schedule any tasks after theeventLoopRu",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#setdeadline"
-    }
-  ],
-  "ToastAndroid": [
-    {
-      "name": "LONG",
-      "text": "LONG",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#long"
-    },
-    {
-      "name": "SHORT",
-      "text": "SHORT",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#short"
-    },
-    {
-      "name": "show",
-      "snippet": "show(${1:message}, ${2:duration})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#show"
-    }
-  ],
-  "NativeMethodsMixin": [
-    {
-      "name": "blur",
-      "snippet": "blur()",
-      "type": "method",
-      "description": "Removes focus from an input or view. This is the opposite of focus().",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#blur"
-    },
-    {
-      "name": "focus",
-      "snippet": "focus()",
-      "type": "method",
-      "description": "Requests focus for the given input or view. The exact behavior triggeredwill dep",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#focus"
-    },
-    {
-      "name": "measure",
-      "snippet": "measure(${1:callback})",
-      "type": "method",
-      "description": "Determines the location on screen, width, and height of the given view andreturn",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measure"
-    },
-    {
-      "name": "measureInWindow",
-      "snippet": "measureInWindow(${1:callback})",
-      "type": "method",
-      "description": "Determines the location of the given view in the window and returns thevalues vi",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measureinwindow"
-    },
-    {
-      "name": "measureLayout",
-      "snippet": "measureLayout(${1:relativeToNativeNode}, ${2:onSuccess}, ${3:onFail})",
-      "type": "method",
-      "description": "Like measure(), but measures the view relative an ancestor,specified as relative",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measurelayout"
-    },
-    {
-      "name": "setNativeProps",
-      "snippet": "setNativeProps(${1:nativeProps})",
-      "type": "method",
-      "description": "This function sends props straight to native. They will not participate infuture",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#setnativeprops"
-    }
-  ],
   "Dimensions": [
     {
       "name": "get",
@@ -337,250 +173,31 @@
       "name": "set",
       "snippet": "set(${1:dims})",
       "type": "method",
-      "description": "This should only be called from native code.",
+      "description": "This should only be called from native code by sending thedidUpdateDimensions ev",
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/dimensions.html#set"
     }
   ],
-  "PixelRatio": [
-    {
-      "name": "get",
-      "snippet": "get()",
-      "type": "method",
-      "description": "Returns the device pixel density. Some examples:",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#get"
-    },
-    {
-      "name": "getFontScale",
-      "snippet": "getFontScale()",
-      "type": "method",
-      "description": "Returns the scaling factor for font sizes. This is the ratio that is used to cal",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#getfontscale"
-    },
-    {
-      "name": "getPixelSizeForLayoutSize",
-      "snippet": "getPixelSizeForLayoutSize(${1:layoutSize})",
-      "type": "method",
-      "description": "Converts a layout size (dp) to pixel size (px).",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#getpixelsizeforlayoutsize"
-    },
-    {
-      "name": "roundToNearestPixel",
-      "snippet": "roundToNearestPixel(${1:layoutSize})",
-      "type": "method",
-      "description": "Rounds a layout size (dp) to the nearest layout size that corresponds toan integ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#roundtonearestpixel"
-    },
-    {
-      "name": "startDetecting",
-      "snippet": "startDetecting()",
-      "type": "method",
-      "description": "// No-op for iOS, but used on the web. Should not be documented.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#startdetecting"
-    }
-  ],
-  "BackAndroid": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:eventName}, ${2:handler})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#addeventlistener"
-    },
-    {
-      "name": "exitApp",
-      "snippet": "exitApp()",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#exitapp"
-    },
-    {
-      "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:eventName}, ${2:handler})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#removeeventlistener"
-    }
-  ],
-  "LayoutAnimation": [
-    {
-      "name": "configChecker",
-      "text": "configChecker",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#configchecker"
-    },
-    {
-      "name": "configureNext",
-      "snippet": "configureNext(${1:config}, ${2:onAnimationDidEnd?})",
-      "type": "method",
-      "description": "Schedules an animation to happen on the next layout.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#configurenext"
-    },
+  "StyleSheet": [
     {
       "name": "create",
-      "snippet": "create(${1:duration}, ${2:type}, ${3:creationProp})",
+      "snippet": "create(${1:obj})",
       "type": "method",
-      "description": "Helper for creating a config for configureNext.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#create"
+      "description": "Creates a StyleSheet style reference from the given object.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#create"
     },
     {
-      "name": "easeInEaseOut",
-      "text": "easeInEaseOut",
+      "name": "flatten",
+      "text": "flatten",
       "type": "property",
       "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#easeineaseout"
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#flatten"
     },
     {
-      "name": "linear",
-      "text": "linear",
+      "name": "hairlineWidth",
+      "text": "hairlineWidth",
       "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#linear"
-    },
-    {
-      "name": "Presets",
-      "text": "Presets",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#presets"
-    },
-    {
-      "name": "Properties",
-      "text": "Properties",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#properties"
-    },
-    {
-      "name": "spring",
-      "text": "spring",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#spring"
-    },
-    {
-      "name": "Types",
-      "text": "Types",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#types"
-    }
-  ],
-  "CameraRoll": [
-    {
-      "name": "getPhotos",
-      "snippet": "getPhotos(${1:params})",
-      "type": "method",
-      "description": "Returns a Promise with photo identifier objects from the local cameraroll of the",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/cameraroll.html#getphotos"
-    },
-    {
-      "name": "saveImageWithTag",
-      "snippet": "saveImageWithTag(${1:tag})",
-      "type": "method",
-      "description": "Saves the image to the camera roll / gallery.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/cameraroll.html#saveimagewithtag"
-    }
-  ],
-  "PanResponder": [
-    {
-      "name": "create",
-      "snippet": "create(${1:config})",
-      "type": "method",
-      "description": "@param {object} config Enhanced versions of all of the responder callbacksthat p",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/panresponder.html#create"
-    }
-  ],
-  "Linking": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Add a handler to Linking changes by listening to the url event typeand providing",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#addeventlistener"
-    },
-    {
-      "name": "canOpenURL",
-      "snippet": "canOpenURL(${1:url})",
-      "type": "method",
-      "description": "Determine whether or not an installed app can handle a given URL.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#canopenurl"
-    },
-    {
-      "name": "getInitialURL",
-      "snippet": "getInitialURL()",
-      "type": "method",
-      "description": "If the app launch was triggered by an app link with,it will give the link url, o",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#getinitialurl"
-    },
-    {
-      "name": "openURL",
-      "snippet": "openURL(${1:url})",
-      "type": "method",
-      "description": "Try to open the given url with any of the installed apps.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#openurl"
-    },
-    {
-      "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Remove a handler by passing the url event type and the handler",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#removeeventlistener"
-    }
-  ],
-  "Alert": [
-    {
-      "name": "alert",
-      "snippet": "alert(${1:title}, ${2:message?}, ${3:buttons?}, ${4:type?})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/alert.html#alert"
-    }
-  ],
-  "AppStateIOS": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Add a handler to AppState changes by listening to the change event typeand provi",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#addeventlistener"
-    },
-    {
-      "name": "currentState",
-      "text": "currentState",
-      "type": "property",
-      "description": "// TODO: getCurrentAppState callback seems to be called at a really late stage//",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#currentstate"
-    },
-    {
-      "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Remove a handler by passing the change event type and the handler",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#removeeventlistener"
-    }
-  ],
-  "AppState": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Add a handler to AppState changes by listening to the change event typeand provi",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#addeventlistener"
-    },
-    {
-      "name": "currentState",
-      "text": "currentState",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#currentstate"
-    },
-    {
-      "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:type}, ${2:handler})",
-      "type": "method",
-      "description": "Remove a handler by passing the change event type and the handler",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#removeeventlistener"
+      "description": "This is defined as the width of a thin line on the platform. It can beused as th",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#hairlinewidth"
     }
   ],
   "AppRegistry": [
@@ -627,27 +244,52 @@
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appregistry.html#unmountapplicationcomponentatroottag"
     }
   ],
-  "StatusBarIOS": [
+  "ActionSheetIOS": [
     {
-      "name": "setHidden",
-      "snippet": "setHidden(${1:hidden}, ${2:animation?})",
+      "name": "showActionSheetWithOptions",
+      "snippet": "showActionSheetWithOptions(${1:options}, ${2:callback})",
       "type": "method",
       "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#sethidden"
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/actionsheetios.html#showactionsheetwithoptions"
     },
     {
-      "name": "setNetworkActivityIndicatorVisible",
-      "snippet": "setNetworkActivityIndicatorVisible(${1:visible})",
+      "name": "showShareActionSheetWithOptions",
+      "snippet": "showShareActionSheetWithOptions(${1:options}, ${2:failureCallback}, ${3:successCallback})",
       "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#setnetworkactivityindicatorvisible"
+      "description": "Display the iOS share sheet. The options object should containone or both of:",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/actionsheetios.html#showshareactionsheetwithoptions"
+    }
+  ],
+  "PanResponder": [
+    {
+      "name": "create",
+      "snippet": "create(${1:config})",
+      "type": "method",
+      "description": "@param {object} config Enhanced versions of all of the responder callbacksthat p",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/panresponder.html#create"
+    }
+  ],
+  "IntentAndroid": [
+    {
+      "name": "canOpenURL",
+      "snippet": "canOpenURL(${1:url}, ${2:callback})",
+      "type": "method",
+      "description": "Determine whether or not an installed app can handle a given URL.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#canopenurl"
     },
     {
-      "name": "setStyle",
-      "snippet": "setStyle(${1:style}, ${2:animated?})",
+      "name": "getInitialURL",
+      "snippet": "getInitialURL(${1:callback})",
       "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#setstyle"
+      "description": "If the app launch was triggered by an app link with {@code Intent.ACTION_VIEW},i",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#getinitialurl"
+    },
+    {
+      "name": "openURL",
+      "snippet": "openURL(${1:url})",
+      "type": "method",
+      "description": "Starts a corresponding external activity for the given URL.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#openurl"
     }
   ],
   "PushNotificationIOS": [
@@ -778,6 +420,50 @@
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pushnotificationios.html#setapplicationiconbadgenumber"
     }
   ],
+  "InteractionManager": [
+    {
+      "name": "addListener",
+      "text": "addListener",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#addlistener"
+    },
+    {
+      "name": "clearInteractionHandle",
+      "snippet": "clearInteractionHandle(${1:handle})",
+      "type": "method",
+      "description": "Notify manager that an interaction has completed.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#clearinteractionhandle"
+    },
+    {
+      "name": "createInteractionHandle",
+      "snippet": "createInteractionHandle()",
+      "type": "method",
+      "description": "Notify manager that an interaction has started.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#createinteractionhandle"
+    },
+    {
+      "name": "Events",
+      "text": "Events",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#events"
+    },
+    {
+      "name": "runAfterInteractions",
+      "snippet": "runAfterInteractions(${1:task})",
+      "type": "method",
+      "description": "Schedule a function to run after all interactions have completed.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#runafterinteractions"
+    },
+    {
+      "name": "setDeadline",
+      "snippet": "setDeadline(${1:deadline})",
+      "type": "method",
+      "description": "A positive number will use setTimeout to schedule any tasks after theeventLoopRu",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/interactionmanager.html#setdeadline"
+    }
+  ],
   "AlertIOS": [
     {
       "name": "alert",
@@ -794,59 +480,87 @@
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/alertios.html#prompt"
     }
   ],
-  "StyleSheet": [
+  "AppState": [
     {
-      "name": "create",
-      "snippet": "create(${1:obj})",
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:type}, ${2:handler})",
       "type": "method",
-      "description": "Creates a StyleSheet style reference from the given object.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#create"
+      "description": "Add a handler to AppState changes by listening to the change event typeand provi",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#addeventlistener"
     },
     {
-      "name": "flatten",
-      "text": "flatten",
+      "name": "currentState",
+      "text": "currentState",
       "type": "property",
       "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#flatten"
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#currentstate"
     },
     {
-      "name": "hairlineWidth",
-      "text": "hairlineWidth",
-      "type": "property",
-      "description": "This is defined as the width of a thin line on the platform. It can beused as th",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/stylesheet.html#hairlinewidth"
+      "name": "removeEventListener",
+      "snippet": "removeEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Remove a handler by passing the change event type and the handler",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstate.html#removeeventlistener"
     }
   ],
-  "DatePickerAndroid": [
+  "NetInfo": [
     {
-      "name": "dateSetAction",
-      "snippet": "dateSetAction()",
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:eventName}, ${2:handler})",
       "type": "method",
-      "description": "A date has been selected.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#datesetaction"
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#addeventlistener"
     },
+    {
+      "name": "fetch",
+      "snippet": "fetch()",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#fetch"
+    },
+    {
+      "name": "isConnected",
+      "text": "isConnected",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#isconnected"
+    },
+    {
+      "name": "isConnectionExpensive",
+      "snippet": "isConnectionExpensive()",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#isconnectionexpensive"
+    },
+    {
+      "name": "removeEventListener",
+      "snippet": "removeEventListener(${1:eventName}, ${2:handler})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#removeeventlistener"
+    }
+  ],
+  "TimePickerAndroid": [
     {
       "name": "dismissedAction",
       "snippet": "dismissedAction()",
       "type": "method",
       "description": "The dialog has been dismissed.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#dismissedaction"
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#dismissedaction"
     },
     {
       "name": "open",
       "snippet": "open(${1:options})",
       "type": "method",
-      "description": "Opens the standard Android date picker dialog.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#open"
-    }
-  ],
-  "VibrationIOS": [
+      "description": "Opens the standard Android time picker dialog.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#open"
+    },
     {
-      "name": "vibrate",
-      "snippet": "vibrate()",
+      "name": "timeSetAction",
+      "snippet": "timeSetAction()",
       "type": "method",
-      "description": "@deprecated",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/vibrationios.html#vibrate"
+      "description": "A time has been selected.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#timesetaction"
     }
   ],
   "Animated": [
@@ -949,6 +663,259 @@
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/animated.html#valuexy"
     }
   ],
+  "BackAndroid": [
+    {
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:eventName}, ${2:handler})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#addeventlistener"
+    },
+    {
+      "name": "exitApp",
+      "snippet": "exitApp()",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#exitapp"
+    },
+    {
+      "name": "removeEventListener",
+      "snippet": "removeEventListener(${1:eventName}, ${2:handler})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/backandroid.html#removeeventlistener"
+    }
+  ],
+  "Vibration": [
+    {
+      "name": "vibrate",
+      "snippet": "vibrate(${1:duration})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/vibration.html#vibrate"
+    }
+  ],
+  "DatePickerAndroid": [
+    {
+      "name": "dateSetAction",
+      "snippet": "dateSetAction()",
+      "type": "method",
+      "description": "A date has been selected.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#datesetaction"
+    },
+    {
+      "name": "dismissedAction",
+      "snippet": "dismissedAction()",
+      "type": "method",
+      "description": "The dialog has been dismissed.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#dismissedaction"
+    },
+    {
+      "name": "open",
+      "snippet": "open(${1:options})",
+      "type": "method",
+      "description": "Opens the standard Android date picker dialog.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/datepickerandroid.html#open"
+    }
+  ],
+  "VibrationIOS": [
+    {
+      "name": "vibrate",
+      "snippet": "vibrate()",
+      "type": "method",
+      "description": "@deprecated",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/vibrationios.html#vibrate"
+    }
+  ],
+  "Clipboard": [
+    {
+      "name": "getString",
+      "snippet": "getString()",
+      "type": "method",
+      "description": "Get content of string type, this method returns a Promise, so you can use follow",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/clipboard.html#getstring"
+    },
+    {
+      "name": "setString",
+      "snippet": "setString(${1:content})",
+      "type": "method",
+      "description": "Set content of string type. You can use following code to set clipboard content",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/clipboard.html#setstring"
+    }
+  ],
+  "Alert": [
+    {
+      "name": "alert",
+      "snippet": "alert(${1:title}, ${2:message?}, ${3:buttons?}, ${4:type?})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/alert.html#alert"
+    }
+  ],
+  "ToastAndroid": [
+    {
+      "name": "LONG",
+      "text": "LONG",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#long"
+    },
+    {
+      "name": "SHORT",
+      "text": "SHORT",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#short"
+    },
+    {
+      "name": "show",
+      "snippet": "show(${1:message}, ${2:duration})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/toastandroid.html#show"
+    }
+  ],
+  "CameraRoll": [
+    {
+      "name": "getPhotos",
+      "snippet": "getPhotos(${1:params})",
+      "type": "method",
+      "description": "Returns a Promise with photo identifier objects from the local cameraroll of the",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/cameraroll.html#getphotos"
+    },
+    {
+      "name": "saveImageWithTag",
+      "snippet": "saveImageWithTag(${1:tag})",
+      "type": "method",
+      "description": "Saves the image to the camera roll / gallery.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/cameraroll.html#saveimagewithtag"
+    }
+  ],
+  "AppStateIOS": [
+    {
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Add a handler to AppState changes by listening to the change event typeand provi",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#addeventlistener"
+    },
+    {
+      "name": "currentState",
+      "text": "currentState",
+      "type": "property",
+      "description": "// TODO: getCurrentAppState callback seems to be called at a really late stage//",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#currentstate"
+    },
+    {
+      "name": "removeEventListener",
+      "snippet": "removeEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Remove a handler by passing the change event type and the handler",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/appstateios.html#removeeventlistener"
+    }
+  ],
+  "LayoutAnimation": [
+    {
+      "name": "configChecker",
+      "text": "configChecker",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#configchecker"
+    },
+    {
+      "name": "configureNext",
+      "snippet": "configureNext(${1:config}, ${2:onAnimationDidEnd?})",
+      "type": "method",
+      "description": "Schedules an animation to happen on the next layout.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#configurenext"
+    },
+    {
+      "name": "create",
+      "snippet": "create(${1:duration}, ${2:type}, ${3:creationProp})",
+      "type": "method",
+      "description": "Helper for creating a config for configureNext.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#create"
+    },
+    {
+      "name": "easeInEaseOut",
+      "text": "easeInEaseOut",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#easeineaseout"
+    },
+    {
+      "name": "linear",
+      "text": "linear",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#linear"
+    },
+    {
+      "name": "Presets",
+      "text": "Presets",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#presets"
+    },
+    {
+      "name": "Properties",
+      "text": "Properties",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#properties"
+    },
+    {
+      "name": "spring",
+      "text": "spring",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#spring"
+    },
+    {
+      "name": "Types",
+      "text": "Types",
+      "type": "property",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/layoutanimation.html#types"
+    }
+  ],
+  "Linking": [
+    {
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Add a handler to Linking changes by listening to the url event typeand providing",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#addeventlistener"
+    },
+    {
+      "name": "canOpenURL",
+      "snippet": "canOpenURL(${1:url})",
+      "type": "method",
+      "description": "Determine whether or not an installed app can handle a given URL.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#canopenurl"
+    },
+    {
+      "name": "getInitialURL",
+      "snippet": "getInitialURL()",
+      "type": "method",
+      "description": "If the app launch was triggered by an app link with,it will give the link url, o",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#getinitialurl"
+    },
+    {
+      "name": "openURL",
+      "snippet": "openURL(${1:url})",
+      "type": "method",
+      "description": "Try to open the given url with any of the installed apps.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#openurl"
+    },
+    {
+      "name": "removeEventListener",
+      "snippet": "removeEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Remove a handler by passing the url event type and the handler",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linking.html#removeeventlistener"
+    }
+  ],
   "AsyncStorage": [
     {
       "name": "clear",
@@ -1028,112 +995,145 @@
       "descriptionMoreURL": "http://facebook.github.io/react-native/docs/asyncstorage.html#setitem"
     }
   ],
-  "IntentAndroid": [
+  "LinkingIOS": [
+    {
+      "name": "addEventListener",
+      "snippet": "addEventListener(${1:type}, ${2:handler})",
+      "type": "method",
+      "description": "Add a handler to LinkingIOS changes by listening to the url event typeand provid",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#addeventlistener"
+    },
     {
       "name": "canOpenURL",
       "snippet": "canOpenURL(${1:url}, ${2:callback})",
       "type": "method",
-      "description": "Determine whether or not an installed app can handle a given URL.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#canopenurl"
-    },
-    {
-      "name": "getInitialURL",
-      "snippet": "getInitialURL(${1:callback})",
-      "type": "method",
-      "description": "If the app launch was triggered by an app link with {@code Intent.ACTION_VIEW},i",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#getinitialurl"
+      "description": "Determine whether or not an installed app can handle a given URL.The callback fu",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#canopenurl"
     },
     {
       "name": "openURL",
       "snippet": "openURL(${1:url})",
       "type": "method",
-      "description": "Starts a corresponding external activity for the given URL.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/intentandroid.html#openurl"
-    }
-  ],
-  "ActionSheetIOS": [
-    {
-      "name": "showActionSheetWithOptions",
-      "snippet": "showActionSheetWithOptions(${1:options}, ${2:callback})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/actionsheetios.html#showactionsheetwithoptions"
+      "description": "Try to open the given url with any of the installed apps.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#openurl"
     },
     {
-      "name": "showShareActionSheetWithOptions",
-      "snippet": "showShareActionSheetWithOptions(${1:options}, ${2:failureCallback}, ${3:successCallback})",
+      "name": "popInitialURL",
+      "snippet": "popInitialURL()",
       "type": "method",
-      "description": "Display the iOS share sheet. The options object should containone or both of:",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/actionsheetios.html#showshareactionsheetwithoptions"
-    }
-  ],
-  "NetInfo": [
-    {
-      "name": "addEventListener",
-      "snippet": "addEventListener(${1:eventName}, ${2:handler})",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#addeventlistener"
-    },
-    {
-      "name": "fetch",
-      "snippet": "fetch()",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#fetch"
-    },
-    {
-      "name": "isConnected",
-      "text": "isConnected",
-      "type": "property",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#isconnected"
-    },
-    {
-      "name": "isConnectionExpensive",
-      "snippet": "isConnectionExpensive()",
-      "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#isconnectionexpensive"
+      "description": "If the app launch was triggered by an app link, it will pop the link url,otherwi",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#popinitialurl"
     },
     {
       "name": "removeEventListener",
-      "snippet": "removeEventListener(${1:eventName}, ${2:handler})",
+      "snippet": "removeEventListener(${1:type}, ${2:handler})",
       "type": "method",
-      "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/netinfo.html#removeeventlistener"
+      "description": "Remove a handler by passing the url event type and the handler",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/linkingios.html#removeeventlistener"
     }
   ],
-  "TimePickerAndroid": [
+  "StatusBarIOS": [
     {
-      "name": "dismissedAction",
-      "snippet": "dismissedAction()",
-      "type": "method",
-      "description": "The dialog has been dismissed.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#dismissedaction"
-    },
-    {
-      "name": "open",
-      "snippet": "open(${1:options})",
-      "type": "method",
-      "description": "Opens the standard Android time picker dialog.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#open"
-    },
-    {
-      "name": "timeSetAction",
-      "snippet": "timeSetAction()",
-      "type": "method",
-      "description": "A time has been selected.",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/timepickerandroid.html#timesetaction"
-    }
-  ],
-  "Vibration": [
-    {
-      "name": "vibrate",
-      "snippet": "vibrate(${1:duration})",
+      "name": "setHidden",
+      "snippet": "setHidden(${1:hidden}, ${2:animation?})",
       "type": "method",
       "description": " ",
-      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/vibration.html#vibrate"
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#sethidden"
+    },
+    {
+      "name": "setNetworkActivityIndicatorVisible",
+      "snippet": "setNetworkActivityIndicatorVisible(${1:visible})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#setnetworkactivityindicatorvisible"
+    },
+    {
+      "name": "setStyle",
+      "snippet": "setStyle(${1:style}, ${2:animated?})",
+      "type": "method",
+      "description": " ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/statusbarios.html#setstyle"
+    }
+  ],
+  "PixelRatio": [
+    {
+      "name": "get",
+      "snippet": "get()",
+      "type": "method",
+      "description": "Returns the device pixel density. Some examples:",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#get"
+    },
+    {
+      "name": "getFontScale",
+      "snippet": "getFontScale()",
+      "type": "method",
+      "description": "Returns the scaling factor for font sizes. This is the ratio that is used to cal",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#getfontscale"
+    },
+    {
+      "name": "getPixelSizeForLayoutSize",
+      "snippet": "getPixelSizeForLayoutSize(${1:layoutSize})",
+      "type": "method",
+      "description": "Converts a layout size (dp) to pixel size (px).",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#getpixelsizeforlayoutsize"
+    },
+    {
+      "name": "roundToNearestPixel",
+      "snippet": "roundToNearestPixel(${1:layoutSize})",
+      "type": "method",
+      "description": "Rounds a layout size (dp) to the nearest layout size that corresponds toan integ",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#roundtonearestpixel"
+    },
+    {
+      "name": "startDetecting",
+      "snippet": "startDetecting()",
+      "type": "method",
+      "description": "// No-op for iOS, but used on the web. Should not be documented.",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/pixelratio.html#startdetecting"
+    }
+  ],
+  "NativeMethodsMixin": [
+    {
+      "name": "blur",
+      "snippet": "blur()",
+      "type": "method",
+      "description": "Removes focus from an input or view. This is the opposite of focus().",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#blur"
+    },
+    {
+      "name": "focus",
+      "snippet": "focus()",
+      "type": "method",
+      "description": "Requests focus for the given input or view. The exact behavior triggeredwill dep",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#focus"
+    },
+    {
+      "name": "measure",
+      "snippet": "measure(${1:callback})",
+      "type": "method",
+      "description": "Determines the location on screen, width, and height of the given view andreturn",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measure"
+    },
+    {
+      "name": "measureInWindow",
+      "snippet": "measureInWindow(${1:callback})",
+      "type": "method",
+      "description": "Determines the location of the given view in the window and returns thevalues vi",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measureinwindow"
+    },
+    {
+      "name": "measureLayout",
+      "snippet": "measureLayout(${1:relativeToNativeNode}, ${2:onSuccess}, ${3:onFail})",
+      "type": "method",
+      "description": "Like measure(), but measures the view relative an ancestor,specified as relative",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#measurelayout"
+    },
+    {
+      "name": "setNativeProps",
+      "snippet": "setNativeProps(${1:nativeProps})",
+      "type": "method",
+      "description": "This function sends props straight to native. They will not participate infuture",
+      "descriptionMoreURL": "http://facebook.github.io/react-native/docs/nativemethodsmixin.html#setnativeprops"
     }
   ]
 }
