@@ -42,7 +42,7 @@ var collect = {
     cache: {
         API: {},
         COMPONENT: {},
-        CLASS:{}
+        CLASS: {}
     },
     indent: 2,
     alphabetical(arr) {
@@ -239,7 +239,7 @@ var collect = {
             let obj = {
                 "name": name,
                 "displayText": name,
-                "snippet": name + '=' + (type.match(/^enum|string/) ? '"$1"' : '{$1}'),
+                "snippet": name + '=' + (/^enum|string/.test(type) && !this.enumException(name) ? '"$1"' : '{$1}'),
                 "type": "attribute",
                 "description": this.getDescription(node),
                 "descriptionMoreURL": this.getDescriptionMoreURL(url, name),
@@ -362,6 +362,9 @@ var collect = {
                 }
             }
         });
+    },
+    enumException: function(name) {
+        return /minuteInterval/.test(name);
     }
 };
 collect.find();
