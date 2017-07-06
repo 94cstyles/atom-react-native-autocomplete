@@ -19,5 +19,4 @@ Potentially wait for further installs  (just `apm install language-javascript-js
 
     *Default:* `React`
 
-<br />
 ![demo](http://7oxfk1.com1.z0.glb.clouddn.com/atom-react-native-autocomplete-demo.gif)
